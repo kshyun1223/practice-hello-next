@@ -5,10 +5,10 @@ import styles from "./NavBar.module.css"
 export default function NavBar() {
   const router = useRouter()
   return (
-    <nav className={ styles.nav }>
-      <Link href="/" style={{ color: router.pathname === "/" ? "red" : "blue"}}>Home</Link>
+    <nav>
+      <Link href="/" className={router.pathname === "/" ? styles.active : ""}>Home</Link>
       <> </>
-      <Link href="/about-next" style={{ color: router.pathname === "/about-next" ? "red" : "blue" }}>About</Link>
+      <Link href="/about-next" className={router.pathname === "/about-next" ? styles.active : ""}>About</Link>
     </nav>
   )
 }
