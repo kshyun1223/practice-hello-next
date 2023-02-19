@@ -6,9 +6,9 @@ export default function NavBar() {
   const router = useRouter()
   return (
     <nav>
-      <Link href="/" className={router.pathname === "/" ? styles.active : ""}>Home</Link>
+      <Link href="/" className={`${styles.link} ${router.pathname === "/" ? styles.active : ""}`}>Home</Link>
       <> </>
-      <Link href="/about-next" className={router.pathname === "/about-next" ? styles.active : ""}>About</Link>
+      <Link href="/about-next" className={`${styles.link} ${router.pathname === "/about-next" ? styles.active : ""}`}>About</Link>
     </nav>
   )
 }

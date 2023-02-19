@@ -1,3 +1,7 @@
 .active {
   color: pink;
 }
+
+.link {
+  text-decoration: none;
+}
