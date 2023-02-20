@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Link from "next/link"
 import { useRouter } from "next/router"
 
@@ -5,22 +6,38 @@ export default function NavBar() {
   const router = useRouter()
   return (
     <nav>
+      <img src="/next.svg" alt="logo"/>
       <Link href="/" legacyBehavior>
-        <a className={router.pathname === "/" ? "active" : ""}>Home</a>
+        <a className={router.pathname === "/" ? "active" : "passive"}>Home</a>
       </Link>
-      <> </>
-      <Link href="/about-next" legacyBehavior>
-        <a className={router.pathname === "/about-next" ? "active" : ""}>About</a>
+      <Link href="/about" legacyBehavior>
+        <a className={router.pathname === "/about" ? "active" : "passive"}>About</a>
       </Link>
       <style jsx>{`
         nav {
-          background-color: pink;
+          display: flex;
+          gap: 10px;
+          flex-direction: column;
+          align-items: center;
+          padding-top: 20px;
+          padding-bottom: 10px;
+          box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+            rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         }
-        a {
+        img {
+          max-width: 100px;
+          margin-bottom: 5px;
+        }
+        nav a {
+          font-weight: 600;
+          font-size: 18px;
           text-decoration: none;
         }
         .active {
-          color : blue;
+          color: red;
+        }
+        .passive { 
+          color: black;
         }
       `}</style>
     </nav>

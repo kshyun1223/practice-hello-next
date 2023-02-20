@@ -4,7 +4,7 @@ export default function about() {
   return (
     <div>
       <Seo title="About" />
-      <h1>About Next.js</h1>
+      <h1>About Next</h1>
     </div>
   )
 }
