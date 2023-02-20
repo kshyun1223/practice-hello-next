@@ -5,6 +5,11 @@ export default function App({Component, pageProps}) {
     <div>
       <NavBar/>
       <Component {...pageProps}/>
+      <style jsx global>{`
+        a {
+          color: white;
+        }
+      `}</style>
     </div>
   )
 }
