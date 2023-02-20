@@ -1,12 +1,10 @@
-import Head from "next/head"
+import Seo from "../components/Seo";
 
 export default function Home() {
   return (
     <div>
-      <Head>
-        <title>Home | Hello Next!!!</title>
-      </Head>
-      <h1>hello next!!!</h1> 
+      <Seo title="Index" />
+      <h1>Hello Next</h1> 
     </div>
   )
 }

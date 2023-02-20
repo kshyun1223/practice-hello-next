@@ -1,12 +1,10 @@
-import Head from "next/head"
+import Seo from "../components/Seo";
 
 export default function about() {
   return (
     <div>
-      <Head>
-        <title>About | Hello Next!!!</title>
-      </Head>
-      <h1>about next</h1>
+      <Seo title="About" />
+      <h1>About Next.js</h1>
     </div>
   )
 }
