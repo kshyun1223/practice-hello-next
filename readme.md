@@ -1,7 +1,7 @@
 # Next.js
 ## 개발환경
 ### Next.js 설치
-- `npx create-next-app@latest --typescript`
+- `npx create-next-app@latest ${프로젝트 이름} --typescript`
 - 특정 버전을 지정하려면 `@` 뒤에 입력한다
 - 타입스크립트를 사용하려면 `--` 뒤에 입력한다
 
